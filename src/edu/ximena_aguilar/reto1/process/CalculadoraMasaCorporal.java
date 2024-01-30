@@ -18,13 +18,14 @@ public class CalculadoraMasaCorporal {
     public static double calcularIndiceMasaCorporal(double estatura,double peso) {
         return peso / Math.pow(estatura, 2);
     }
-    public static String clasificarIndiceMasaCorporal(double inc){
-        String value = **;
-        if(imc<18) {
+    public static String clasificarIndiceMasaCorporal(double imc) {
+        String value ="";
+        if (imc < 18) {
             value = "desnutricion";
-        }else if(imc<=24.99)
-            value= "normal";
+        } else if (imc <= 24.99)
+            value = "normal";
         return value;
+    }
         public static double calculateBMI(double weight, double height) {
             // Convertir altura a metros
             double heightMeters = height / 100.0;
@@ -70,4 +71,4 @@ public class CalculadoraMasaCorporal {
         
 
     }
-}
+
